@@ -5,16 +5,24 @@
 以下の手順でdart環境をインストールし実行可能です。
 
 // Homebrewのインストール確認
-1. /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
 // Dart SDKのインストール
-2. brew tap dart-lang/dart
-3. brew install dart
+```
+brew tap dart-lang/dart
+brew install dart
+```
 
 // PATHを通す
-4. brew info dart
-5. echo 'export PATH="/usr/local/opt/dart/libexec/bin:$PATH"' >> ~/.zshrc
-6. source ~/.zshrc
+```
+brew info dart
+echo 'export PATH="/usr/local/opt/dart/libexec/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
 
 // Dartのインストール確認
+```
 dart --version
+```
